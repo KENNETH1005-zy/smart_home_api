@@ -1,0 +1,11 @@
+# Byte-compiled / compiled Python modules
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env
+
+# Database file
+smart_home.db
