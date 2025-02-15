@@ -24,10 +24,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install httpx  # Fix missing httpx module
+          pip install python-jose[cryptography]  # Fix missing jwt module
 
       - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV  # Fix for module import
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
 
       - name: Run Database Migrations
         run: |
