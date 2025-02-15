@@ -1,11 +1,27 @@
-# Byte-compiled / compiled Python modules
-__pycache__/
-*.py[cod]
-*.so
-
-# Virtual environment
+# Ignore virtual environment
+.venv/
 venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+
+# Ignore logs and database files
+*.log
+*.sqlite3
+smart_home.db
+
+# Ignore environment variables
 .env
 
-# Database file
-smart_home.db
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
